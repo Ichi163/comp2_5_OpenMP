@@ -8,12 +8,12 @@ void add_array(long long* sum, int** a, int x_max, int y_max)
 	int y;
     
     #pragma omp parallel for 
-	for ( y = 0; y < y_max; y++) {
+	for (  y=0; y < y_max; y++) {
 		sum[y] = 0;
 	}
 
     #pragma omp parallel for 
-	for (y = 0; y < y_max; y++)
+	for ( y=0; y < y_max; y++)
 	{
 		for (int x = 0; x < x_max; x++)
 		{
